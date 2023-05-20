@@ -29,7 +29,6 @@ The server should now be running on http://localhost:3000. You can access the Sw
 
 Don't forget to stop the containers once you're done using the following command:
 ```bash
-# This will start the MongoDB container and the Node application container.
 $ docker-compose down
 ```
 
@@ -42,9 +41,9 @@ However, you can also make requests to the API without using Swagger. To do so, 
 
 The available endpoints are:
 
-- GET /chicken: Get all chickens.
-- GET /chicken/:id: Get a specific chicken by ID.
-- POST /chicken: Create a new chicken.
-- PATCH /chicken/:id: Partially update a chicken by ID.
-- DELETE /chicken/:id: Delete a chicken by ID.
-- PUT /chicken/:id/run: Increase the steps count for a chicken by ID.
+- GET /chicken: - Get all chickens.
+- GET /chicken/:id - Get a specific chicken by ID.
+- POST /chicken - Create a new chicken.
+- PATCH /chicken/:id - Partially update a chicken by ID.
+- DELETE /chicken/:id - Delete a chicken by ID.
+- PUT /chicken/:id/run - Increase the steps count for a chicken by ID.
