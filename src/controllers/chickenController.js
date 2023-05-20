@@ -33,6 +33,7 @@ const updateChickenStepsById = async (req, res) => {
         const chickenId = req.params.id;
         const chicken = await Chicken.findById(chickenId);
         chicken.steps += 1;
+        chicken.isRunning = true;
         await chicken.save();
         res.json(chicken);
       } catch (error) {
